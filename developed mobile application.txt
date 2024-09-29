@@ -1,0 +1,1044 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .ustmenu{
+      width: 100%;
+      height: 57px;
+      background-color: white;
+      position:fixed;
+      z-index: 50;
+    }
+    .ustmenu .barmenu{
+      float: left;
+      font-size: 20px;
+      padding: 18px 0px 0px 24px ;
+      color: #102555;
+    }
+    .ustmenu .bulut img{
+      float: left;
+      width: 46px;
+      padding: 12px 0px 0px 25px;
+    }
+    .ustmenu .aramacubugu{
+      font-size: 17px;
+      float: right;
+      padding: 20px 30px 0px 0px;
+      color: #102555;
+    }
+    .ustmenu .user{
+      color: #102555;
+      font-size: 17px;
+      float: right;
+      padding: 20px 25px 0px 0px;
+    }
+    .ustmenu button{
+      float: right;
+      margin: 15px 20px 0px 0px;
+      background-color: darkgreen;
+      width: 102px;
+      height: 30px;
+      list-style-type: none;
+      box-shadow: 1px 0px 0px 0px darkgreen; 
+      border-radius: 10%;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ustmenu a{
+      margin: 5px 0px 5px 15px;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .ust{
+      width: 100%;
+      height: 178px;
+      display: inline-block;
+      background-color: #07928b;
+    }
+    .ust img{
+      float: left;
+      width: 95px;
+      height:25px;
+      margin-top: 77px;
+      margin-left: 25px;
+    }
+    .ust h2{
+      text-shadow: 1px 0px 0px white;
+      font-size: 20px;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .ust h2,a{
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      float: left;
+      margin-top: 5px;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+    .girisyeri{
+      width: 100%;
+      height: 500px;
+    }
+    .girisyeri h1{ 
+      padding: 47px 0px 0px 15px;
+      float:left;
+      color: #102555;
+      font-size: 45px;
+      font-weight:bold;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .girisyeri p{
+      font-weight: normal;
+      float: left;
+      color: #102555;
+      margin: 15px 0px 0px 15px;
+      font-size: 20px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 30px;	
+    }
+    .deneme{
+      display: flex;
+      justify-content: center;
+      float: left;
+      text-align: center;
+      width: 85%;
+      height: 45px;
+      background-color: #0871f5;
+      border-radius: 2%;
+      margin: 35px 0px 0px 45px;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+    .demolar{
+      display: flex;
+      justify-content: center;
+      float: left;
+      text-align: center;
+      width: 85%;
+      height: 45px;
+      background-color: #ffffff;
+      border: 2px solid #0871f5;
+      border-radius: 2%;
+      margin: 6px 0px 0px 45px;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+
+    .deneme li{
+      padding-top: 9px;
+      list-style-type: none;
+    }
+    .deneme li a{
+      margin: 1px 0px 4px 0px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    }
+    .demolar li{
+      padding-top: 9px ;
+      list-style-type: none;
+    }
+    .demolar li a{
+      margin: 1px 0px 4px 0px;
+      text-decoration: none;
+      color: #0871f5;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+    .girisyeriiki img{
+      width: 100%;
+    }
+
+    .galerialani{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .galerialani h1{
+      text-align: center;
+      font-size: 30px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .gartner{
+      margin: auto;
+      width: 85%;
+      height: 435px;
+      border-radius: 5%;
+      box-shadow: 0px 2px 3px 2px #c2c8ce;
+    }
+    .gartner img{
+      border-radius: 5%;
+      width: 100%;
+    }
+    .gartner p{
+      margin: 20px;
+      float: left;
+      font-size: 22px;
+      font-weight: bold;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .gartner a{
+      float: left;
+      margin: 10px;
+      font-size: 16px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .gartner .yazi1{
+      font-weight: normal;
+      font-size: 15px;
+      float: left;
+      margin-left: 15px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .gartner a{
+      float: left;
+      margin-left: 15px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .gartner .baslikgartner{
+      float: left;
+      font-size: 28px;
+      margin-left: 15px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .gartner .baslikbes{
+      font-size: 29px;
+      margin-left: 15px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .altkisim{
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
+    .altkisim h1{
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 35px;
+     }
+    .altkisim h4{
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 25px;
+      font-size: 18px;
+      font-weight: normal;
+     }
+    
+
+
+    .kucukis img{
+      width: 90%;
+      margin-left: 5%;
+    }
+    .kucukis h1{
+      float:left;
+      padding:8px 40px 15px 30px; 
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .kucukis p{
+      float:left;
+      padding:0px 40px 10px 0px;
+      font-weight: normal;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .kucukis a{
+      text-align: center;
+      float: left;
+      padding-left: 28%;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+    .ikialtkisim{
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
+    .ikialtkisim h1{
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 32px;
+     }
+    .ikialtkisim h4{
+      font-size: 18px;
+      line-height: 25px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+    .ikialtkisim .boton{
+      list-style-type: none;
+      margin: auto;
+      width: 85%;
+      height: 45px;
+      border: 3px solid  rgb(0, 162, 255);
+      border-radius: 7%;
+    }
+    .ikialtkisim a{
+      font-weight: bold;
+      text-decoration: none;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+
+    .foto1 img{
+      width: 100%;
+    }
+    
+    .ucuncualtkisim{
+      text-align: center;
+      width: 100%;
+      height: auto;
+    }
+    .ucuncualtkisim h1{
+      font-weight: bold;
+      text-align: center;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .galeri{
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+    .galeri .foto{
+      border-radius: 7%;
+      display: inline-block;
+      box-shadow: 1px 4px 4px 1px darkgray;
+      width: auto;
+      margin: 5%;
+    }
+    .galeri img{
+      width: 140px;
+      height: 90px;
+    }
+    .baslikdort{
+      width: 90%;
+      height: auto;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .baslikdort h1{
+      font-weight: bold;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .baslikdort h4{
+      font-weight: normal;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .geriucuncu{
+      float: left;
+      text-align: left;
+    }
+    .geriucuncu .kutuiki{
+      margin: auto;
+      width: 90%;
+      height: 420px;
+      margin-bottom: 10px;
+      border-radius: 5%;
+      box-shadow: 0px 2px 3px 2px #c2c8ce;
+    }
+    .geriucuncu img{
+      margin-left: 110px;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+    }
+    .geriucuncu h1{
+      float: left;
+      margin-left: 15px;
+      margin-top: 15px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .geriucuncu h4{
+      float: left;
+      margin-top: 15px;
+      margin-left: 15px;
+      font-weight: normal;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .geriucuncu a{
+      text-decoration: normal;
+      float: left;
+      margin-left: 15px;
+      margin-top: 40px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    .botonnn{
+      background-color: white;
+      border:2px solid rgb(0, 162, 255);
+      margin-top: 8%;
+      margin-left: 7%;
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      height: 45px;
+      float: left;
+      border-radius: 5%;
+    }
+    .botonnn a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 162, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    .botonn{
+      background-color: white;
+      border:2px solid rgb(0, 162, 255);
+      margin-top: 15%;
+      margin-bottom: 15%;
+      margin-left: 7%;
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      height: 45px;
+      float: left;
+      border-radius: 5%;
+    }
+    .botonn a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 162, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .besincialt{
+      margin-top: 10%;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+    .besincialt h1{
+      text-align: center;
+      font-size: 38px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .besincialt h2,p{
+      float: left;
+      margin-left: 30px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .button4{
+      text-align: center;
+    }
+    .button4 li{
+      background-color: white;
+      border:2px solid rgb(0, 162, 255);
+      margin-top: 15%;
+      margin-bottom: 15%;
+      margin-left: 7%;
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      height: 45px;
+      float: left;
+      border-radius: 5%;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .button4 li a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 162, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .button4 img{
+      width: 90%;
+      border-radius: 5%;
+    }
+
+
+    .altadogru{
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .index{
+      width: 100%;
+    }
+
+    .yenialan{
+      width: 90%;
+      height: auto;
+      text-align: center;
+    }
+    .yenialan h1{
+      text-align: center;
+      font-size: 25px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+
+    .altadogru{
+      width: 100%;
+      height: auto;
+      color: #2c2d3e;
+    }
+    .altadogru .yazitarafi{
+      margin: auto;
+      width: 85%;
+      height: 115px;
+      border-radius: 5%;
+      box-shadow: 1px 4px 4px 1px darkgray;
+    }
+    .altadogru h1{
+      text-align: center;
+    }
+    .altadogru .ahref{
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: left;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+    .altadogru a{
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+
+
+    .button5{
+      background-color: white;
+      border:2px solid rgb(0, 162, 255);
+      margin-top: 15%;
+      margin-bottom: 15%;
+      margin-left: 7%;
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      height: 45px;
+      float: left;
+      border-radius: 5%;
+    }
+    .button5 a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(0, 162, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .altayakin{
+      width: 100%;
+      height: auto;
+      float: left;
+    }
+
+
+    .altkisim{
+      text-align: center;
+    }
+    .altkisim img{
+      width: 100%;
+    }
+    .button6{
+      background-color: rgb(0, 162, 255);
+      margin-top: 15%;
+      margin-bottom: 15%;
+      margin-left: 7%;
+      list-style-type: none;
+      text-align: center;
+      width: 80%;
+      height: 45px;
+      float: left;
+      border-radius: 5%;
+    }
+    .button6 a{
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      padding-top: 115px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .enalt{
+      width: 100%;
+      height: 340px;
+      background-color: rgb(53, 53, 77);
+    }
+    .enalt h3{
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .enalt a{
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .enalt h4{
+      text-align: left;
+      margin: 15px 0px 0px 18px;
+      color: #fafafa;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .butonlr{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .butonlr .kutu{
+      width: 110px;
+      margin: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .butonlr p{
+      margin: 10px 0px 0px 2px;
+      color: #102555;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .butonlr img{
+      border-radius: 45%;
+      margin: 5%;
+      box-shadow: 5px 5px 5px 5px darkgray;
+      width: 65px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ustmenu">
+    <div class="barmenu"><i class="fa-solid fa-bars"></i></div>
+    <div class="bulut"><img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-no-type-logo.svg" alt=""></div>
+    <button><a href="#">Try for free</a></button>
+    <div class="user"><i class="fa-solid fa-user"></i></div>
+    <div class="aramacubugu"><i class="fa-solid fa-magnifying-glass"></i></div>
+  </div>
+
+  <div class="ust">
+    <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/05/php-notification-icon.png?resize=1024,253" alt="">
+    <h2>salesforce slarter for small business.</h2>
+    <a href="#">see it action</a>
+  </div>
+
+  <div class="girisyeri">
+    <h1>Delight <br> customers <br>
+    and grow <br> revenue on the <br> #1 AI CRM.</h1>
+    <p>Get a complete CRM across sales, service, marketing, commerce, and more. It's all on one integrated platform. We call it Einstein 1. It <br> lets you work smarter so you can <br> spend more time growing <br> relationships, productivity, and <br> your bottom line.</p>
+   
+    <ul class="deneme">
+    <li><a href="#">Try for free</a></li>
+    </ul>
+
+    <ul class="demolar">
+    <li><a href="#">Watch demos</a></li>
+    </ul>
+  </div>
+  <div class="girisyeriiki">
+  <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/04/marquee-einstein-sales-fg.png?resize=1024,683">
+  </div>
+  <br><br>
+  <div class="galerialani">
+    <h1>Get the latest from <br> Salesforce.</h1>
+  <br><br>
+    <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/04/n-up-news-gartner-mq-cpq.webp?resize=1024,577" alt="">
+    <br><br>
+    <p>Gartner named Salesforce <br> a Leader in Customer Data <br> Platforms.</p>
+    <br><br><br><br><br><br><br>
+    <a href="#">Read the report</a>
+    </div>
+    <br>
+
+
+    <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/n-up-news-salesblazers-zig.jpg?resize=768,432" alt="">
+    <br><br>
+    <p>Join the <br> Salesblazer movement.</p>
+    <br><br><br><br>
+    <a href="#">Get started</a>
+    </div>
+    <br>
+
+
+    <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/03/n-up-news-pro-suite.png?resize=1536,865" alt="">
+    <br><br>
+    <p>Check out Pro Suite, our <br> new all-in-one CRM that <br> grows with your business.</p>
+    <br><br><br><br><br><br>
+    <a href="#">Explore now</a>
+    </div>
+    <br>
+
+    <br>
+    <div class="altkisim">
+      <h1>Power up every <br> team with CRM, <br> trusted AI, and data.</h1> <br<br><br>
+      
+      <h4>Learn how Salesforce CRM, powered <br> by the trusted Einstein 1 platform, <br> helps everyone at your company be <br> more productive and grow customer <br> loyalty.</h4>
+    </div>
+
+    <br><br>
+
+    <div class="kucukis"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-products-smb.jpg?resize=768,768" alt="">
+    <h1>Small Business</h1>
+    <br>
+    <p>Sell smarter and provide support faster in a single app.</p>
+    <br><br><br><br><br><br>
+    <a href="#">Watch demos</a>
+    </div>
+
+
+    <br><br><br><br><br>
+
+    <div class="kucukis"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-products-sales.jpg?resize=768,781" alt="">
+    <h1>Sales</h1>
+    <br>
+    <p>Close more deals faster and unleash growth with AI-driven sales.</p>
+    <br><br><br><br><br><br>
+    <a href="#">Watch demos</a>
+    </div>
+
+
+
+    <br><br><br><br><br>
+
+    <div class="kucukis"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-products-service.jpg?resize=768,768" alt="">
+    <h1>Service</h1>
+    <br>
+    <p>Easily scale service and boost productivity with AI support.</p>
+    <br><br><br>
+    <a href="#">Watch demos</a>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div class="kucukis"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-products-all-products.jpg?resize=768,768" alt="">
+    <h1>See all products</h1>
+    <br>
+    <p>Connect with customers in a whole new way with AI on Einstein 1.</p>
+    <br>
+    <a href="#">Watch demos</a>
+    </div>
+
+  </div> 
+  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="ikialtkisim">
+      <h1>Find innovations for <br> any industry.</h1>
+      <br>
+      <h4>Whatever your industry, we offer <br> solutions to modernise your business, <br> save time, and lower costs.</h4>
+      <br><br>
+      <ul class="demolar">
+        <li><a href="#">See all industries</a></li>
+      </ul>
+      <br><br><br><br><br><br>
+
+      <div class="butonlr">
+        <div class="kutu">
+          <img src="https://www.salesforce.com/content/dam/web/global/svg-icons/financial-day.svg" alt="">
+        <p>Financial <br> services</p>
+        </div>
+        <div class="kutu">
+        <img src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder25.svg" alt="">
+        <p>Retail</p>
+        </div>
+        <div class="kutu">
+          <img src="https://www.salesforce.com/content/dam/web/global/svg-icons/health-day.svg" alt="">
+          <p>Healthcare & <br> Life Sciences</p>
+        </div>
+        <div class="kutu">
+          <img src="https://www.salesforce.com/content/dam/web/global/svg-icons/manufacturing-day.svg" alt="">
+          <p>Manufacturing</p>
+        </div>
+       </div>
+      <br>
+      <div class="foto1">
+      <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/hp-industries-page-break-bg.webp?resize=1536,183" alt="">
+       </div>
+
+    
+       <br><br><br>
+       <div class="ucuncualtkisim">
+       <h1>See how companies <br> drive customer success <br> in a whole new way with <br> Einstein 1.</h1>
+      
+       <br><br><br>
+       <ul class="demolar">
+        <li><a href="#">see all customer stories</a></li>
+       </ul>
+      <br><br><br><br><br>
+
+      <div class="galeri">
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/Swissbit-logo.png?resize=300,85" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/guess-logo-customerscard.jpg?resize=300,260" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/09/Breitling-300x95-stacked-update.png?resize=150,95" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/07/heathrow.png?w=1024" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/santander-logo.png?w=136" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/schneider-electric.jpg?resize=300,169" alt=""></li>
+        <li class="foto"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/06/service-customer-logowall-uber-eats.png?resize=300,95" alt=""></li>
+      </div>
+      <br><br><br><br><br>
+      <div class="baslikdort">
+        <h1>Learn valuable skills <br> for free, with <br> Trailhead.</h1>
+        <br>
+        <h4>Follow guided learning paths and get <br> hands- on to learn Salesforce, digital, <br> and soft skills from anywhere.</h4>
+      </div>
+    </div>
+
+
+
+    <div class="geriucuncu">
+    
+    <div class="kutuiki">
+      <br><br>
+      <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/lex_implementation_basics/56b5a2cb9fb731dbfe6b5b88cd855775_badge.png" alt="">
+      <h1>Salesforce CRM</h1>
+      <h4>Learn how to use customer relationship management (CRM) software to grow your business.</h4>
+      <a href="#">Start learning</a>
+  </div>
+  <br>
+
+  <div class="kutuiki">
+    <br><br>
+        <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/sales-cloud-platform-quick-look/b91b2499486a772a4eee8ce55aa32b57_badge.png" alt="">
+        <h1>Sales Cloud basics</h1>
+        <h4>Grow your business, boost productivity, and make smart decisions with Sales Cloud.</h4>
+        <a href="#">Start learning</a>
+    </div>
+    <br>
+
+   <div class="kutuiki">
+    <br><br>
+          <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/service-cloud-platform-quick-look/db2713f3bec133c96429ddc96373ed09_badge.png" alt="">
+          <h1>Service Cloud basics</h1>
+          <h4>Supercharge your agents with omni-channel tools and an intelligent service platform.</h4>
+          <a href="#">Start learning</a>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <ul class="demolar">
+          <li><a href="#">Learn for free</a></li>
+        </ul>
+        </div>
+        <br><br><br></br>
+        <div class="besincialt">
+          <h1>All sorts of <br> content. All to <br> help you grow.</h1> 
+          <br><br><br>
+          <h2>What is CRM ?</h2>
+          <br><br>
+          <p>Learn all about CRM, how it can unify  all your teams, and how it drives  growth and productivity across your <br> business.</p>
+        </div>
+          <br><br>
+          <ul class="demolar">
+            <li><a href="#">Discover CRM</a></li>
+          </ul>
+          <br><br><br><br><br><br>
+        <div class="button4">
+          <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2022/12/php-rc-what-is-crm.jpg?resize=1024,576" alt="ay?">
+        </div>
+
+
+
+        <br><br><br><br><br>
+          <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2022/12/state-of-sales-resource-card.jpg?resize=768,432" alt="">
+            <br><br>
+            <h1 class="baslikgartner">Read our latest State of Sales Report.</h1>
+            <br>
+            <p class="yazi1">Learn how more than 7,700 sales professionals are finding success now.</p>
+            <a href="#">read the report</a>
+          </div>
+            <br><br><br>
+
+
+            <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-rc-connections-series.jpg?resize=768,432" alt="">
+              <br><br>
+              <h1 class="baslikgartner">Stream our Connections video series.</h1>
+              <p class="yazi1">Hear how innovative marketers are connecting with customers in all new ways.</p>
+              <a href="#">Watch the series</a>
+            </div>
+              <br><br><br>
+
+
+              <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/10/php-rc-lead-management.webp?resize=768,432" alt="">
+                <br><br>
+                <h1 class="baslikgartner">Boost sales with Lead Management 101.</h1>
+                <br>
+                <p class="yazi1">Get expert advice on lead management.</p>
+                <a href="#">Join the webinar</a>
+                </div>
+
+
+                <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/01/hp-page-break-img-hills.png?resize=1536,427" alt="" class="index">
+                <br><br><br>
+
+                <div class="yenialan">
+                  <h1>Inspiring events. In- <br> person and streaming.</h1>
+                </div>
+
+
+
+
+                <br><br><br><br>
+                <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/chp-news-bar-evergreen-events.jpeg?resize=768,432" alt="">
+                  <br><br>
+                  <h1 class="baslikbes">Immerse yourself in passion, learning, and expertise.</h1>
+                  <br>
+                  <a href="#">Explore eyents</a>
+                  </div>
+                  <br><br><br>
+
+
+
+                  <br><br><br>
+                  <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/01/chp-events-customer-success-2.jpg?resize=1024,576" alt="">
+                    <br><br>
+                    <h1 class="baslikbes">Learn all about customer success in hands-on workshops.</h1>
+                    <br>
+                    <a href="#">Check out our woekshops</a>
+                    </div>
+                    <br><br><br>
+
+
+
+      <br><br><br>
+        <div class="gartner"><img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/08/chp-events-for-developers.jpg?resize=768,432" alt="">
+        <br><br>
+        <h1 class="baslikbes">Get in-depth guidance on how to drive growth with Salesforce, free.</h1>
+        <br>
+        <a href="#">Fing webinars</a>
+        </div>
+        <br><br><br><br><br><br><br>
+
+
+        <div class="altadogru">
+        <h1>Meet and collaborate <br> with Trailblazers who <br> share your role and <br> interests.</h1>
+        
+        <br><br><br><br>
+
+        <div class="yazitarafi">
+          <h2 class="ahref">Sales Coloud - Getting <br> Started</h2>
+          <a href="#">Join us now</a>
+        </div>
+      <br><br><br>
+        <div class="yazitarafi">
+          <h2 class="ahref">Salesforce platform</h2>
+          <a href="#">Join us now</a> 
+        </div>
+      <br><br><br>
+        <div class="yazitarafi"> 
+          <h2 class="ahref">#Customer360</h2>
+          <a href="#">Follow topic</a>
+        </h1>
+        </div>
+     <br><br><br>
+
+     <ul class="demolar">
+      <li><a href="#">Explore Trailblazer Community</a></li>
+     </ul>
+     <br><br><br><br><br><br>
+
+
+     <div class="altayakin">
+      <h1 class="b1b">Discover apps and <br> expertise to extend <br> Salesforce.</h1>
+      <br>
+      <p class="b1b">Browse our AppExchange marketplace, with <br> thousands of customised apps and <br> specialised consulting partners to help any <br> sized business craft a perfectly tailored <br> Customer 360 solution.</p>
+     </div>
+
+     <br><br><br>
+     <ul class="demolar">
+      <li><a href="#">Visit AppExchange</a></li>
+     </ul>
+     <br><br><br>
+
+
+     <div class="altkisim">
+      <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2023/01/php-appy-appexchange.jpg?resize=1024,1024" alt="">
+      </br><br><br><br>
+      <h1>Try Salesforce for free. <br> No credit card required, <br> no software to install.</h1>
+      <br>
+      <ul class="deneme">
+        <li><a href="#">Start free trial</a></li>
+      </ul>
+      <br><br>
+      <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2022/12/php-free-trial-desk.jpg?resize=1536,864" alt="">
+      <br><br><br>
+      <h1>Get timely <br> updates and <br> fresh ideas <br> delivered to your <br> inbox.</h1>
+      <br>
+      <ul class="deneme">
+        <li><a href="#">Sign up now</a></li>
+      </ul>
+      <br><br>
+      <img src="https://wp.salesforce.com/en-eu/wp-content/uploads/sites/11/2024/04/marquee-einstein-sales-fg.png?resize=1024,683" alt="">
+    </div>
+    <br><br><br>
+    <div class="enalt">
+      <br>
+      <h3><i class="fa-solid fa-globe"></i> Worldwide <i class="fa-solid fa-chevron-down"></i></h3>
+      <br><br><br>
+      <a href="#">Legal</a>
+      <a href="#">Terms of service</a>
+      <a href="#">Privacy</a>
+      <a href="#">Responsible Dissclosure</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Trust</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Your privacy Choices</a>
+      <br><br><br><br><br>
+      <h4> Copyright 2024 Salesforce, Inc. All rights reserved. Various trademarks held by their <br> respective owners. salesforce UK Limited, village 9, floor 26 Salesforce Tower, 110 <br> Bishopsgate, London, UK, EC2N 4AY. Phone: +353 14403500. Fax: +353 14403501</h>
+    </div>
+</body>
+</html>
